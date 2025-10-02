@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A website for maleeha</title>
+    <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Poppins:wght@3000;500;700&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Great Vibes',cursive;
+        }
+        body{
+            background: linear-gradient(135deg,#aad399,#a6eaee);
+            color:#333;
+            text-align: center;
+            padding:20px;
+        }
+        .container{
+            max-width: 900px;
+            margin:auto;
+            background: #ffffffaa;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgb(0,0,0,0.15);
+        }
+        h1{
+            font-size: 2.5rem;
+            color:#444;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:20px;
+            margin:20px 0;
+        }
+        .gallery img{
+            width: 350px;
+            height:350px;
+            object-fit:cover;
+            border-radius: 15px;
+            transition:transform 0.3s ease,box-shadow 0.3s ease;
+        }
+        .gallery img:hover{
+            transform:scale(1.05);
+            box-shadow:0 5px 15px rgb(0,0,0,0.2);
+        }
+        .btn{
+            background: #e6d6e2;
+            color:#444;
+            padding:12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition:0.3s;
+        }
+        .btn:hover{
+            background: #ff3e6c;
+            color:antiquewhite;
+        }
+        .message{
+            margin-top:25px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: none; 
+            color:#454343;
+        }
+
+        @media(max-width:768px){
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .gallery img{
+                width:200px;
+                height:200px;
+            }
+        }
+        @media(max-width:480px){
+            .container{
+                padding:20px;
+            }
+            h1{
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 0.95rem;
+            }
+            .gallery img{
+                width: 100%;
+                height: auto;
+            }
+            .btn{
+                width:100%;
+                padding:12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <h1>Happy Birthdayy Ameyy!(✿◡‿◡)</h1>
+        <p>Meeting you was one of the most beautiful part of my life,I am so lucky to have you in my life - like a blessing written in the quiet corners of fate✨˚˖𓍢✧˚.⋆.From our endless talks about Islam,anime, and every little story in between,to the way you always listen with no judgement,no ego,just pure heart - you've show me what true friendship feels like🎀.On your special day,I wish nothing less than the brightest skies and the sweetest victories for you,I want to see you rise to the very top of success!🌷°❀⋆.ೃ࿔:･°</p>
+        <div class="gallery">
+            <img src="mav.jpg">
+            <img src="mav1.jpg">
+            <img src="mav2.jpg">
+
+            <button class="btn" onclick="showMessage()">Click me!</button>
+            <p class="message" id="hiddenMessage">
+               May Allahﷻ bless your years with barakah,fill your heart with peace and light,guide your steps with wisdom,and grant you success in this world and the next...🌸May He protect you from every hardship,surround you with His Mercy.....and make your dreams bloom into reality..Ameen...!🪻
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage(){
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
